@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Betting Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>⚽ AI Betting Assistant</h1>
+
+    <section class="picks">
+      <h2>🔥 Daily 2 Odds Pick</h2>
+      <div id="daily-pick">Loading...</div>
+    </section>
+
+    <section class="accumulator">
+      <h2>💰 Accumulator Suggestion</h2>
+      <div id="accumulator">Loading...</div>
+    </section>
+
+    <section class="live">
+      <h2>📊 Live Match Stats</h2>
+      <div id="live-stats">Loading (coming soon)...</div>
+    </section>
+
+    <section class="prediction">
+      <h2>🎯 Prediction Tool</h2>
+      <label>Features (e.g., 1,0,3):</label>
+      <input type="text" id="features" value="1,0,3">
+      <label>Odds:</label>
+      <input type="number" id="odds" value="2.5">
+      <button onclick="getPrediction()">Predict</button>
+      <pre id="prediction-result"></pre>
+    </section>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
